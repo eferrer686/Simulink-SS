@@ -1,0 +1,2750 @@
+Model {
+  Name			  "simulinkExcel"
+  Version		  7.7
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.2"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Wed Apr 11 01:07:12 2018"
+  Creator		  "edfmg"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "edfmg"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Apr 16 13:01:27 2018"
+  RTWModifiedTimeStamp	  445784486
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    7
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "simulinkExcel"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "simulinkExcel"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dwe"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  off
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar off
+  CovSaveSingleToWorkspaceVar off
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      8
+      Version		      "1.11.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  9
+	  Version		  "1.11.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  ConcurrentTasks	  off
+	  Solver		  ode45
+	  SolverName		  ode45
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  10
+	  Version		  "1.11.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "StructureWithTime"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  11
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  12
+	  Version		  "1.11.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Simplified"
+	  MergeDetectMultiDrivingBlocksExec "error"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "error"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "error"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  ModelReferenceCSMismatchMessage "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  13
+	  Version		  "1.11.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  64
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "Float"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "Specified"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  14
+	  Version		  "1.11.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  15
+	  Version		  "1.11.0"
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  16
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    13
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeMetricsReport off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      17
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		27
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      18
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"ExistingSharedCode"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		Cell			"CombineOutputUpdateFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "C99 (ISO)"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  20
+	  Version		  "1.11.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    [ 180, 192, 1100, 832 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    8
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "left"
+    VerticalAlignment	    "top"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+      OutputWhenUnConnected   off
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      GeneratePreprocessorConditionals off
+    }
+  }
+  System {
+    Name		    "simulinkExcel"
+    Location		    [497, 167, 1751, 870]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "250"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "145"
+    Block {
+      BlockType		      SubSystem
+      Name		      "From Spreadsheet"
+      SID		      "9"
+      Description	      "Replaced Block"
+      Ports		      [0, 68]
+      Position		      [20, 25, 105, 360]
+      ZOrder		      17
+      BackgroundColor	      "yellow"
+      RequestExecContextInheritance off
+      Variant		      off
+      MaskType		      "Replaced Block"
+      MaskDescription	      "This block has been replaced with an empty subsystem because it used functionality that i"
+      "s unavailable in Simulink R2011a."
+      MaskDisplay	      "fprintf('Replaced: %s\\n','FromSpreadsheet')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"From Spreadsheet"
+	Location		[100, 100, 600, 900]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground1"
+	  SID			  "10"
+	  Position		  [185, 40, 215, 60]
+	  ZOrder		  2
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground10"
+	  SID			  "11"
+	  Position		  [185, 580, 215, 600]
+	  ZOrder		  20
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground11"
+	  SID			  "12"
+	  Position		  [185, 640, 215, 660]
+	  ZOrder		  22
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground12"
+	  SID			  "13"
+	  Position		  [185, 700, 215, 720]
+	  ZOrder		  24
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground13"
+	  SID			  "14"
+	  Position		  [185, 760, 215, 780]
+	  ZOrder		  26
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground14"
+	  SID			  "15"
+	  Position		  [185, 820, 215, 840]
+	  ZOrder		  28
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground15"
+	  SID			  "16"
+	  Position		  [185, 880, 215, 900]
+	  ZOrder		  30
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground16"
+	  SID			  "17"
+	  Position		  [185, 940, 215, 960]
+	  ZOrder		  32
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground17"
+	  SID			  "18"
+	  Position		  [185, 1000, 215, 1020]
+	  ZOrder		  34
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground18"
+	  SID			  "19"
+	  Position		  [185, 1060, 215, 1080]
+	  ZOrder		  36
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground19"
+	  SID			  "20"
+	  Position		  [185, 1120, 215, 1140]
+	  ZOrder		  38
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground2"
+	  SID			  "21"
+	  Position		  [185, 100, 215, 120]
+	  ZOrder		  4
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground20"
+	  SID			  "22"
+	  Position		  [185, 1180, 215, 1200]
+	  ZOrder		  40
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground21"
+	  SID			  "23"
+	  Position		  [185, 1240, 215, 1260]
+	  ZOrder		  42
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground22"
+	  SID			  "24"
+	  Position		  [185, 1300, 215, 1320]
+	  ZOrder		  44
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground23"
+	  SID			  "25"
+	  Position		  [185, 1360, 215, 1380]
+	  ZOrder		  46
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground24"
+	  SID			  "26"
+	  Position		  [185, 1420, 215, 1440]
+	  ZOrder		  48
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground25"
+	  SID			  "27"
+	  Position		  [185, 1480, 215, 1500]
+	  ZOrder		  50
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground26"
+	  SID			  "28"
+	  Position		  [185, 1540, 215, 1560]
+	  ZOrder		  52
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground27"
+	  SID			  "29"
+	  Position		  [185, 1600, 215, 1620]
+	  ZOrder		  54
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground28"
+	  SID			  "30"
+	  Position		  [185, 1660, 215, 1680]
+	  ZOrder		  56
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground29"
+	  SID			  "31"
+	  Position		  [185, 1720, 215, 1740]
+	  ZOrder		  58
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground3"
+	  SID			  "32"
+	  Position		  [185, 160, 215, 180]
+	  ZOrder		  6
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground30"
+	  SID			  "33"
+	  Position		  [185, 1780, 215, 1800]
+	  ZOrder		  60
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground31"
+	  SID			  "34"
+	  Position		  [185, 1840, 215, 1860]
+	  ZOrder		  62
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground32"
+	  SID			  "35"
+	  Position		  [185, 1900, 215, 1920]
+	  ZOrder		  64
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground33"
+	  SID			  "36"
+	  Position		  [185, 1960, 215, 1980]
+	  ZOrder		  66
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground34"
+	  SID			  "37"
+	  Position		  [185, 2020, 215, 2040]
+	  ZOrder		  68
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground35"
+	  SID			  "38"
+	  Position		  [185, 2080, 215, 2100]
+	  ZOrder		  70
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground36"
+	  SID			  "39"
+	  Position		  [185, 2140, 215, 2160]
+	  ZOrder		  72
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground37"
+	  SID			  "40"
+	  Position		  [185, 2200, 215, 2220]
+	  ZOrder		  74
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground38"
+	  SID			  "41"
+	  Position		  [185, 2260, 215, 2280]
+	  ZOrder		  76
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground39"
+	  SID			  "42"
+	  Position		  [185, 2320, 215, 2340]
+	  ZOrder		  78
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground4"
+	  SID			  "43"
+	  Position		  [185, 220, 215, 240]
+	  ZOrder		  8
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground40"
+	  SID			  "44"
+	  Position		  [185, 2380, 215, 2400]
+	  ZOrder		  80
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground41"
+	  SID			  "45"
+	  Position		  [185, 2440, 215, 2460]
+	  ZOrder		  82
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground42"
+	  SID			  "46"
+	  Position		  [185, 2500, 215, 2520]
+	  ZOrder		  84
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground43"
+	  SID			  "47"
+	  Position		  [185, 2560, 215, 2580]
+	  ZOrder		  86
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground44"
+	  SID			  "48"
+	  Position		  [185, 2620, 215, 2640]
+	  ZOrder		  88
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground45"
+	  SID			  "49"
+	  Position		  [185, 2680, 215, 2700]
+	  ZOrder		  90
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground46"
+	  SID			  "50"
+	  Position		  [185, 2740, 215, 2760]
+	  ZOrder		  92
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground47"
+	  SID			  "51"
+	  Position		  [185, 2800, 215, 2820]
+	  ZOrder		  94
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground48"
+	  SID			  "52"
+	  Position		  [185, 2860, 215, 2880]
+	  ZOrder		  96
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground49"
+	  SID			  "53"
+	  Position		  [185, 2920, 215, 2940]
+	  ZOrder		  98
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground5"
+	  SID			  "54"
+	  Position		  [185, 280, 215, 300]
+	  ZOrder		  10
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground50"
+	  SID			  "55"
+	  Position		  [185, 2980, 215, 3000]
+	  ZOrder		  100
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground51"
+	  SID			  "56"
+	  Position		  [185, 3040, 215, 3060]
+	  ZOrder		  102
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground52"
+	  SID			  "57"
+	  Position		  [185, 3100, 215, 3120]
+	  ZOrder		  104
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground53"
+	  SID			  "58"
+	  Position		  [185, 3160, 215, 3180]
+	  ZOrder		  106
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground54"
+	  SID			  "59"
+	  Position		  [185, 3220, 215, 3240]
+	  ZOrder		  108
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground55"
+	  SID			  "60"
+	  Position		  [185, 3280, 215, 3300]
+	  ZOrder		  110
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground56"
+	  SID			  "61"
+	  Position		  [185, 3340, 215, 3360]
+	  ZOrder		  112
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground57"
+	  SID			  "62"
+	  Position		  [185, 3400, 215, 3420]
+	  ZOrder		  114
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground58"
+	  SID			  "63"
+	  Position		  [185, 3460, 215, 3480]
+	  ZOrder		  116
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground59"
+	  SID			  "64"
+	  Position		  [185, 3520, 215, 3540]
+	  ZOrder		  118
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground6"
+	  SID			  "65"
+	  Position		  [185, 340, 215, 360]
+	  ZOrder		  12
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground60"
+	  SID			  "66"
+	  Position		  [185, 3580, 215, 3600]
+	  ZOrder		  120
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground61"
+	  SID			  "67"
+	  Position		  [185, 3640, 215, 3660]
+	  ZOrder		  122
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground62"
+	  SID			  "68"
+	  Position		  [185, 3700, 215, 3720]
+	  ZOrder		  124
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground63"
+	  SID			  "69"
+	  Position		  [185, 3760, 215, 3780]
+	  ZOrder		  126
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground64"
+	  SID			  "70"
+	  Position		  [185, 3820, 215, 3840]
+	  ZOrder		  128
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground65"
+	  SID			  "71"
+	  Position		  [185, 3880, 215, 3900]
+	  ZOrder		  130
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground66"
+	  SID			  "72"
+	  Position		  [185, 3940, 215, 3960]
+	  ZOrder		  132
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground67"
+	  SID			  "73"
+	  Position		  [185, 4000, 215, 4020]
+	  ZOrder		  134
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground68"
+	  SID			  "74"
+	  Position		  [185, 4060, 215, 4080]
+	  ZOrder		  136
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground7"
+	  SID			  "75"
+	  Position		  [185, 400, 215, 420]
+	  ZOrder		  14
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground8"
+	  SID			  "76"
+	  Position		  [185, 460, 215, 480]
+	  ZOrder		  16
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground9"
+	  SID			  "77"
+	  Position		  [185, 520, 215, 540]
+	  ZOrder		  18
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "78"
+	  Position		  [250, 43, 280, 57]
+	  ZOrder		  1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  "79"
+	  Position		  [250, 103, 280, 117]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  SID			  "80"
+	  Position		  [250, 163, 280, 177]
+	  ZOrder		  5
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out4"
+	  SID			  "81"
+	  Position		  [250, 223, 280, 237]
+	  ZOrder		  7
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out5"
+	  SID			  "82"
+	  Position		  [250, 283, 280, 297]
+	  ZOrder		  9
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out6"
+	  SID			  "83"
+	  Position		  [250, 343, 280, 357]
+	  ZOrder		  11
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out7"
+	  SID			  "84"
+	  Position		  [250, 403, 280, 417]
+	  ZOrder		  13
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out8"
+	  SID			  "85"
+	  Position		  [250, 463, 280, 477]
+	  ZOrder		  15
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out9"
+	  SID			  "86"
+	  Position		  [250, 523, 280, 537]
+	  ZOrder		  17
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out10"
+	  SID			  "87"
+	  Position		  [250, 583, 280, 597]
+	  ZOrder		  19
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out11"
+	  SID			  "88"
+	  Position		  [250, 643, 280, 657]
+	  ZOrder		  21
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out12"
+	  SID			  "89"
+	  Position		  [250, 703, 280, 717]
+	  ZOrder		  23
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out13"
+	  SID			  "90"
+	  Position		  [250, 763, 280, 777]
+	  ZOrder		  25
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out14"
+	  SID			  "91"
+	  Position		  [250, 823, 280, 837]
+	  ZOrder		  27
+	  Port			  "14"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out15"
+	  SID			  "92"
+	  Position		  [250, 883, 280, 897]
+	  ZOrder		  29
+	  Port			  "15"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out16"
+	  SID			  "93"
+	  Position		  [250, 943, 280, 957]
+	  ZOrder		  31
+	  Port			  "16"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out17"
+	  SID			  "94"
+	  Position		  [250, 1003, 280, 1017]
+	  ZOrder		  33
+	  Port			  "17"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out18"
+	  SID			  "95"
+	  Position		  [250, 1063, 280, 1077]
+	  ZOrder		  35
+	  Port			  "18"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out19"
+	  SID			  "96"
+	  Position		  [250, 1123, 280, 1137]
+	  ZOrder		  37
+	  Port			  "19"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out20"
+	  SID			  "97"
+	  Position		  [250, 1183, 280, 1197]
+	  ZOrder		  39
+	  Port			  "20"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out21"
+	  SID			  "98"
+	  Position		  [250, 1243, 280, 1257]
+	  ZOrder		  41
+	  Port			  "21"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out22"
+	  SID			  "99"
+	  Position		  [250, 1303, 280, 1317]
+	  ZOrder		  43
+	  Port			  "22"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out23"
+	  SID			  "100"
+	  Position		  [250, 1363, 280, 1377]
+	  ZOrder		  45
+	  Port			  "23"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out24"
+	  SID			  "101"
+	  Position		  [250, 1423, 280, 1437]
+	  ZOrder		  47
+	  Port			  "24"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out25"
+	  SID			  "102"
+	  Position		  [250, 1483, 280, 1497]
+	  ZOrder		  49
+	  Port			  "25"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out26"
+	  SID			  "103"
+	  Position		  [250, 1543, 280, 1557]
+	  ZOrder		  51
+	  Port			  "26"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out27"
+	  SID			  "104"
+	  Position		  [250, 1603, 280, 1617]
+	  ZOrder		  53
+	  Port			  "27"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out28"
+	  SID			  "105"
+	  Position		  [250, 1663, 280, 1677]
+	  ZOrder		  55
+	  Port			  "28"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out29"
+	  SID			  "106"
+	  Position		  [250, 1723, 280, 1737]
+	  ZOrder		  57
+	  Port			  "29"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out30"
+	  SID			  "107"
+	  Position		  [250, 1783, 280, 1797]
+	  ZOrder		  59
+	  Port			  "30"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out31"
+	  SID			  "108"
+	  Position		  [250, 1843, 280, 1857]
+	  ZOrder		  61
+	  Port			  "31"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out32"
+	  SID			  "109"
+	  Position		  [250, 1903, 280, 1917]
+	  ZOrder		  63
+	  Port			  "32"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out33"
+	  SID			  "110"
+	  Position		  [250, 1963, 280, 1977]
+	  ZOrder		  65
+	  Port			  "33"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out34"
+	  SID			  "111"
+	  Position		  [250, 2023, 280, 2037]
+	  ZOrder		  67
+	  Port			  "34"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out35"
+	  SID			  "112"
+	  Position		  [250, 2083, 280, 2097]
+	  ZOrder		  69
+	  Port			  "35"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out36"
+	  SID			  "113"
+	  Position		  [250, 2143, 280, 2157]
+	  ZOrder		  71
+	  Port			  "36"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out37"
+	  SID			  "114"
+	  Position		  [250, 2203, 280, 2217]
+	  ZOrder		  73
+	  Port			  "37"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out38"
+	  SID			  "115"
+	  Position		  [250, 2263, 280, 2277]
+	  ZOrder		  75
+	  Port			  "38"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out39"
+	  SID			  "116"
+	  Position		  [250, 2323, 280, 2337]
+	  ZOrder		  77
+	  Port			  "39"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out40"
+	  SID			  "117"
+	  Position		  [250, 2383, 280, 2397]
+	  ZOrder		  79
+	  Port			  "40"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out41"
+	  SID			  "118"
+	  Position		  [250, 2443, 280, 2457]
+	  ZOrder		  81
+	  Port			  "41"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out42"
+	  SID			  "119"
+	  Position		  [250, 2503, 280, 2517]
+	  ZOrder		  83
+	  Port			  "42"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out43"
+	  SID			  "120"
+	  Position		  [250, 2563, 280, 2577]
+	  ZOrder		  85
+	  Port			  "43"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out44"
+	  SID			  "121"
+	  Position		  [250, 2623, 280, 2637]
+	  ZOrder		  87
+	  Port			  "44"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out45"
+	  SID			  "122"
+	  Position		  [250, 2683, 280, 2697]
+	  ZOrder		  89
+	  Port			  "45"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out46"
+	  SID			  "123"
+	  Position		  [250, 2743, 280, 2757]
+	  ZOrder		  91
+	  Port			  "46"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out47"
+	  SID			  "124"
+	  Position		  [250, 2803, 280, 2817]
+	  ZOrder		  93
+	  Port			  "47"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out48"
+	  SID			  "125"
+	  Position		  [250, 2863, 280, 2877]
+	  ZOrder		  95
+	  Port			  "48"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out49"
+	  SID			  "126"
+	  Position		  [250, 2923, 280, 2937]
+	  ZOrder		  97
+	  Port			  "49"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out50"
+	  SID			  "127"
+	  Position		  [250, 2983, 280, 2997]
+	  ZOrder		  99
+	  Port			  "50"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out51"
+	  SID			  "128"
+	  Position		  [250, 3043, 280, 3057]
+	  ZOrder		  101
+	  Port			  "51"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out52"
+	  SID			  "129"
+	  Position		  [250, 3103, 280, 3117]
+	  ZOrder		  103
+	  Port			  "52"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out53"
+	  SID			  "130"
+	  Position		  [250, 3163, 280, 3177]
+	  ZOrder		  105
+	  Port			  "53"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out54"
+	  SID			  "131"
+	  Position		  [250, 3223, 280, 3237]
+	  ZOrder		  107
+	  Port			  "54"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out55"
+	  SID			  "132"
+	  Position		  [250, 3283, 280, 3297]
+	  ZOrder		  109
+	  Port			  "55"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out56"
+	  SID			  "133"
+	  Position		  [250, 3343, 280, 3357]
+	  ZOrder		  111
+	  Port			  "56"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out57"
+	  SID			  "134"
+	  Position		  [250, 3403, 280, 3417]
+	  ZOrder		  113
+	  Port			  "57"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out58"
+	  SID			  "135"
+	  Position		  [250, 3463, 280, 3477]
+	  ZOrder		  115
+	  Port			  "58"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out59"
+	  SID			  "136"
+	  Position		  [250, 3523, 280, 3537]
+	  ZOrder		  117
+	  Port			  "59"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out60"
+	  SID			  "137"
+	  Position		  [250, 3583, 280, 3597]
+	  ZOrder		  119
+	  Port			  "60"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out61"
+	  SID			  "138"
+	  Position		  [250, 3643, 280, 3657]
+	  ZOrder		  121
+	  Port			  "61"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out62"
+	  SID			  "139"
+	  Position		  [250, 3703, 280, 3717]
+	  ZOrder		  123
+	  Port			  "62"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out63"
+	  SID			  "140"
+	  Position		  [250, 3763, 280, 3777]
+	  ZOrder		  125
+	  Port			  "63"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out64"
+	  SID			  "141"
+	  Position		  [250, 3823, 280, 3837]
+	  ZOrder		  127
+	  Port			  "64"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out65"
+	  SID			  "142"
+	  Position		  [250, 3883, 280, 3897]
+	  ZOrder		  129
+	  Port			  "65"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out66"
+	  SID			  "143"
+	  Position		  [250, 3943, 280, 3957]
+	  ZOrder		  131
+	  Port			  "66"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out67"
+	  SID			  "144"
+	  Position		  [250, 4003, 280, 4017]
+	  ZOrder		  133
+	  Port			  "67"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out68"
+	  SID			  "145"
+	  Position		  [250, 4063, 280, 4077]
+	  ZOrder		  135
+	  Port			  "68"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Ground68"
+	  SrcPort		  1
+	  DstBlock		  "Out68"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground67"
+	  SrcPort		  1
+	  DstBlock		  "Out67"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground66"
+	  SrcPort		  1
+	  DstBlock		  "Out66"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground65"
+	  SrcPort		  1
+	  DstBlock		  "Out65"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground64"
+	  SrcPort		  1
+	  DstBlock		  "Out64"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground63"
+	  SrcPort		  1
+	  DstBlock		  "Out63"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground62"
+	  SrcPort		  1
+	  DstBlock		  "Out62"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground61"
+	  SrcPort		  1
+	  DstBlock		  "Out61"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground60"
+	  SrcPort		  1
+	  DstBlock		  "Out60"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground59"
+	  SrcPort		  1
+	  DstBlock		  "Out59"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground58"
+	  SrcPort		  1
+	  DstBlock		  "Out58"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground57"
+	  SrcPort		  1
+	  DstBlock		  "Out57"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground56"
+	  SrcPort		  1
+	  DstBlock		  "Out56"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground55"
+	  SrcPort		  1
+	  DstBlock		  "Out55"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground54"
+	  SrcPort		  1
+	  DstBlock		  "Out54"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground53"
+	  SrcPort		  1
+	  DstBlock		  "Out53"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground52"
+	  SrcPort		  1
+	  DstBlock		  "Out52"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground51"
+	  SrcPort		  1
+	  DstBlock		  "Out51"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground50"
+	  SrcPort		  1
+	  DstBlock		  "Out50"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground49"
+	  SrcPort		  1
+	  DstBlock		  "Out49"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground48"
+	  SrcPort		  1
+	  DstBlock		  "Out48"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground47"
+	  SrcPort		  1
+	  DstBlock		  "Out47"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground46"
+	  SrcPort		  1
+	  DstBlock		  "Out46"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground45"
+	  SrcPort		  1
+	  DstBlock		  "Out45"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground44"
+	  SrcPort		  1
+	  DstBlock		  "Out44"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground43"
+	  SrcPort		  1
+	  DstBlock		  "Out43"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground42"
+	  SrcPort		  1
+	  DstBlock		  "Out42"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground41"
+	  SrcPort		  1
+	  DstBlock		  "Out41"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground40"
+	  SrcPort		  1
+	  DstBlock		  "Out40"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground39"
+	  SrcPort		  1
+	  DstBlock		  "Out39"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground38"
+	  SrcPort		  1
+	  DstBlock		  "Out38"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground37"
+	  SrcPort		  1
+	  DstBlock		  "Out37"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground36"
+	  SrcPort		  1
+	  DstBlock		  "Out36"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground35"
+	  SrcPort		  1
+	  DstBlock		  "Out35"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground34"
+	  SrcPort		  1
+	  DstBlock		  "Out34"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground33"
+	  SrcPort		  1
+	  DstBlock		  "Out33"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground32"
+	  SrcPort		  1
+	  DstBlock		  "Out32"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground31"
+	  SrcPort		  1
+	  DstBlock		  "Out31"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground30"
+	  SrcPort		  1
+	  DstBlock		  "Out30"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground29"
+	  SrcPort		  1
+	  DstBlock		  "Out29"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground28"
+	  SrcPort		  1
+	  DstBlock		  "Out28"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground27"
+	  SrcPort		  1
+	  DstBlock		  "Out27"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground26"
+	  SrcPort		  1
+	  DstBlock		  "Out26"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground25"
+	  SrcPort		  1
+	  DstBlock		  "Out25"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground24"
+	  SrcPort		  1
+	  DstBlock		  "Out24"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground23"
+	  SrcPort		  1
+	  DstBlock		  "Out23"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground22"
+	  SrcPort		  1
+	  DstBlock		  "Out22"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground21"
+	  SrcPort		  1
+	  DstBlock		  "Out21"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground20"
+	  SrcPort		  1
+	  DstBlock		  "Out20"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground19"
+	  SrcPort		  1
+	  DstBlock		  "Out19"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground18"
+	  SrcPort		  1
+	  DstBlock		  "Out18"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground17"
+	  SrcPort		  1
+	  DstBlock		  "Out17"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground16"
+	  SrcPort		  1
+	  DstBlock		  "Out16"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground15"
+	  SrcPort		  1
+	  DstBlock		  "Out15"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground14"
+	  SrcPort		  1
+	  DstBlock		  "Out14"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground13"
+	  SrcPort		  1
+	  DstBlock		  "Out13"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground12"
+	  SrcPort		  1
+	  DstBlock		  "Out12"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground11"
+	  SrcPort		  1
+	  DstBlock		  "Out11"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground10"
+	  SrcPort		  1
+	  DstBlock		  "Out10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground9"
+	  SrcPort		  1
+	  DstBlock		  "Out9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground8"
+	  SrcPort		  1
+	  DstBlock		  "Out8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground7"
+	  SrcPort		  1
+	  DstBlock		  "Out7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground6"
+	  SrcPort		  1
+	  DstBlock		  "Out6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground5"
+	  SrcPort		  1
+	  DstBlock		  "Out5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground4"
+	  SrcPort		  1
+	  DstBlock		  "Out4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground3"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground2"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground1"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "Interpreted MATLAB\nFunction"
+      SID		      "4"
+      Ports		      [1, 1]
+      Position		      [295, 185, 365, 215]
+      ZOrder		      4
+      MATLABFcn		      "preocesar(u)"
+      Output1D		      off
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "7"
+      Ports		      [68, 1]
+      Position		      [195, 20, 200, 355]
+      ZOrder		      15
+      ShowName		      off
+      Inputs		      "68"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      SID		      "5"
+      Ports		      [1]
+      Position		      [425, 184, 455, 216]
+      ZOrder		      5
+      NumInputPorts	      "1"
+      Open		      off
+      TimeRange		      auto
+      TickLabels	      OneTimeTick
+      LimitDataPoints	      off
+      MaxDataPoints	      5000
+      SaveToWorkspace	      off
+      SaveName		      ScopeData
+      YMin		      -10
+      YMax		      10
+      SampleInput	      off
+      SampleTime	      -1
+      ZoomMode		      on
+      Grid		      on
+      DataFormat	      StructureWithTime
+      Decimation	      1
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Location		      [680 330 1240 750]
+    }
+    Line {
+      SrcBlock		      "Interpreted MATLAB\nFunction"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      Points		      [40, 0; 0, 10]
+      DstBlock		      "Interpreted MATLAB\nFunction"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      1
+      Points		      [54, 0; 0, -5]
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      2
+      Points		      [65, 0; 0, -5]
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      3
+      Points		      [68, 0; 0, -5]
+      DstBlock		      "Mux"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      4
+      Points		      [54, 0; 0, -5]
+      DstBlock		      "Mux"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      5
+      DstBlock		      "Mux"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      6
+      DstBlock		      "Mux"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      7
+      DstBlock		      "Mux"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      8
+      DstBlock		      "Mux"
+      DstPort		      9
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      9
+      DstBlock		      "Mux"
+      DstPort		      10
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      10
+      DstBlock		      "Mux"
+      DstPort		      11
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      11
+      DstBlock		      "Mux"
+      DstPort		      12
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      12
+      DstBlock		      "Mux"
+      DstPort		      13
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      13
+      DstBlock		      "Mux"
+      DstPort		      14
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      14
+      DstBlock		      "Mux"
+      DstPort		      15
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      15
+      DstBlock		      "Mux"
+      DstPort		      16
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      16
+      DstBlock		      "Mux"
+      DstPort		      17
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      17
+      DstBlock		      "Mux"
+      DstPort		      18
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      18
+      DstBlock		      "Mux"
+      DstPort		      19
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      19
+      DstBlock		      "Mux"
+      DstPort		      20
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      20
+      DstBlock		      "Mux"
+      DstPort		      21
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      21
+      DstBlock		      "Mux"
+      DstPort		      22
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      22
+      DstBlock		      "Mux"
+      DstPort		      23
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      23
+      DstBlock		      "Mux"
+      DstPort		      24
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      24
+      DstBlock		      "Mux"
+      DstPort		      25
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      25
+      DstBlock		      "Mux"
+      DstPort		      26
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      26
+      DstBlock		      "Mux"
+      DstPort		      27
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      27
+      DstBlock		      "Mux"
+      DstPort		      28
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      28
+      DstBlock		      "Mux"
+      DstPort		      29
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      29
+      DstBlock		      "Mux"
+      DstPort		      30
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      30
+      DstBlock		      "Mux"
+      DstPort		      31
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      31
+      DstBlock		      "Mux"
+      DstPort		      32
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      32
+      DstBlock		      "Mux"
+      DstPort		      33
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      33
+      DstBlock		      "Mux"
+      DstPort		      34
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      34
+      DstBlock		      "Mux"
+      DstPort		      35
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      35
+      DstBlock		      "Mux"
+      DstPort		      36
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      36
+      DstBlock		      "Mux"
+      DstPort		      37
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      37
+      DstBlock		      "Mux"
+      DstPort		      38
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      38
+      DstBlock		      "Mux"
+      DstPort		      39
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      39
+      DstBlock		      "Mux"
+      DstPort		      40
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      40
+      DstBlock		      "Mux"
+      DstPort		      41
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      41
+      DstBlock		      "Mux"
+      DstPort		      42
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      42
+      DstBlock		      "Mux"
+      DstPort		      43
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      43
+      DstBlock		      "Mux"
+      DstPort		      44
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      44
+      DstBlock		      "Mux"
+      DstPort		      45
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      45
+      DstBlock		      "Mux"
+      DstPort		      46
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      46
+      DstBlock		      "Mux"
+      DstPort		      47
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      47
+      DstBlock		      "Mux"
+      DstPort		      48
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      48
+      DstBlock		      "Mux"
+      DstPort		      49
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      49
+      DstBlock		      "Mux"
+      DstPort		      50
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      50
+      DstBlock		      "Mux"
+      DstPort		      51
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      51
+      DstBlock		      "Mux"
+      DstPort		      52
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      52
+      DstBlock		      "Mux"
+      DstPort		      53
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      53
+      DstBlock		      "Mux"
+      DstPort		      54
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      54
+      DstBlock		      "Mux"
+      DstPort		      55
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      55
+      DstBlock		      "Mux"
+      DstPort		      56
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      56
+      DstBlock		      "Mux"
+      DstPort		      57
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      57
+      DstBlock		      "Mux"
+      DstPort		      58
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      58
+      DstBlock		      "Mux"
+      DstPort		      59
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      59
+      DstBlock		      "Mux"
+      DstPort		      60
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      60
+      DstBlock		      "Mux"
+      DstPort		      61
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      61
+      DstBlock		      "Mux"
+      DstPort		      62
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      62
+      DstBlock		      "Mux"
+      DstPort		      63
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      63
+      DstBlock		      "Mux"
+      DstPort		      64
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      64
+      DstBlock		      "Mux"
+      DstPort		      65
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      65
+      DstBlock		      "Mux"
+      DstPort		      66
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      66
+      DstBlock		      "Mux"
+      DstPort		      67
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      67
+      DstBlock		      "Mux"
+      DstPort		      68
+    }
+    Line {
+      SrcBlock		      "From Spreadsheet"
+      SrcPort		      68
+      Points		      [70, 0]
+      DstBlock		      "Mux"
+      DstPort		      5
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000012
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "simulinkExcel"
+    created		    "11-Apr-2018 01:08:25"
+    isLibrary		    0
+    sfVersion		    75014001.0001
+    firstTarget		    2
+  }
+  target {
+    id			    2
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 0]
+  }
+}
